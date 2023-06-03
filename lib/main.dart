@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '中文文字',
+              'Mingchao font with red color',
               style: TextStyle(
                 fontFamily: 'mingchao',
                 fontSize: 30,
@@ -51,8 +52,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Text(
-              '中文文字',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Default font with red color',
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.red,
+              ),
             ),
           ],
         ),
